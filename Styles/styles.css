@@ -1,0 +1,53 @@
+/* Contenedor del encabezado */
+.header-container {
+    display: flex;
+    align-items: center;
+    background-color: #00bcd4; /* Azul claro */
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el logo */
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Estilo del título del encabezado */
+.header {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Estilo de la tabla */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0;
+}
+
+/* Estilo para las filas del encabezado */
+.custom-thead th {
+    background-color: #f8f9fa; /* Fondo claro para el encabezado */
+    color: #333; /* Color del texto */
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+}
+
+/* Estilo para las filas del cuerpo */
+.custom-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo específico para las celdas */
+.custom-table td {
+    padding: 10px;
+    text-align: left;
+    color: #333;
+}
