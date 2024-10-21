@@ -15,4 +15,4 @@ series.forEach(serie => {
 })
 const averageRow = table.insertRow();
 averageRow.innerHTML = `<td class="table-active" colspan="4">Seasons Average: ${average}</td>`;
-averageRow.classList.add('font-weight-bold'); // Estilo para resaltar la fila
+averageRow.classList.add('font-weight-bold');

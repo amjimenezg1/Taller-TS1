@@ -1,11 +1,5 @@
 import { series } from './data.js';
-
-const table = document.getElementById('TableBody');
-const cardDetails = document.getElementById('cardDetails');
-const detailsImage = document.getElementById('detailsImage');
-const detailsTitle = document.getElementById('detailsTitle');
-const detailsDescription = document.getElementById('detailsDescription');
-const detailsLink = document.getElementById('detailsLink');
+const table = document.getElementById('rows');
 
 let average = (series.reduce((acc, serie) => acc + serie.seasons, 0) / series.length).toFixed(1);
 
@@ -17,16 +11,6 @@ series.forEach(serie => {
         <td>${serie.network}</td>
         <td>${serie.seasons}</td>
     `;
-
-    row.addEventListener('click', () => {
-        detailsImage.src = serie.image;
-        detailsImage.alt = 'Portada de ' + serie.title;
-        detailsTitle.textContent = serie.title;
-        detailsDescription.textContent = serie.description;
-        detailsLink.href = serie.website;
-        detailsLink.textContent = 'Visit Website';
-        cardDetails.style.display = 'block'; 
-    });
 });
 
 const averageRow = table.insertRow();
